@@ -27,7 +27,7 @@
 				<div class="main-container">
 					<h1>Crie seu convite</h1>
 
-					<form action="/" method="post" enctype="multipart/form-data" class="">
+					<form action="/" method="post" enctype="multipart/form-data">
 						<div class="about">
 							<div class="section-title">
 								<img src="./assets/icons/calendar.svg" alt="ícone de calendário" />
@@ -50,7 +50,7 @@
 							</div>
 
 							<div class="radio-wrapper">
-								<label>Tipo</label>
+								<label id="label">Tipo</label>
 								<div class="radio-inner">
 									<input type="radio" name="type" id="presencial" value="presencial" checked />
 									<label for="presencial">
@@ -76,11 +76,218 @@
 								<textarea name="description" id="description" placeholder="Escreva sobre os detalhes do evento" rows="5"></textarea>
 							</div>
 						</div>
+					</form>
 
+					<form action="/" method="post">
 						<div class="customization">
 							<div class="section-title">
-								<img src="./assets/icons/paintbrush-vertical.svg" alt="ícone de pincel" />
-								<p>Sobre o evento</p>
+								<img src="./assets/icons/paintbrush.svg" alt="ícone de pincel" />
+								<p>Personalização</p>
+							</div>
+
+							<div class="color-wrapper">
+								<label class="title">Cor principal</label>
+								<div class="color-selection">
+									<!-- Cada input + label com SVG -->
+									<input type="radio" name="color" id="color1" />
+									<label for="color1">
+										<svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+											<rect width="40" height="40" rx="20" fill="#2D3136" />
+											<rect x="6" y="6" width="28" height="28" rx="14" fill="#59b2ff" />
+										</svg>
+									</label>
+
+									<input type="radio" name="color" id="color2" />
+									<label for="color2">
+										<svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+											<rect width="40" height="40" rx="20" fill="#2D3136" />
+											<rect x="6" y="6" width="28" height="28" rx="14" fill="#6a59ff" />
+										</svg>
+									</label>
+
+									<input type="radio" name="color" id="color3" />
+									<label for="color3">
+										<svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+											<rect width="40" height="40" rx="20" fill="#2D3136" />
+											<rect x="6" y="6" width="28" height="28" rx="14" fill="#b259ff" />
+										</svg>
+									</label>
+
+									<input type="radio" name="color" id="color4" />
+									<label for="color4">
+										<svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+											<rect width="40" height="40" rx="20" fill="#2D3136" />
+											<rect x="6" y="6" width="28" height="28" rx="14" fill="#ff59f9" />
+										</svg>
+									</label>
+
+									<input type="radio" name="color" id="color5" />
+									<label for="color5">
+										<svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+											<rect width="40" height="40" rx="20" fill="#2D3136" />
+											<rect x="6" y="6" width="28" height="28" rx="14" fill="#ff598b" />
+										</svg>
+									</label>
+
+									<input type="radio" name="color" id="color6" />
+									<label for="color6">
+										<svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+											<rect width="40" height="40" rx="20" fill="#2D3136" />
+											<rect x="6" y="6" width="28" height="28" rx="14" fill="#ff5959" />
+										</svg>
+									</label>
+
+									<input type="radio" name="color" id="color7" />
+									<label for="color7">
+										<svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+											<rect width="40" height="40" rx="20" fill="#2D3136" />
+											<rect x="6" y="6" width="28" height="28" rx="14" fill="#ff8b59" />
+										</svg>
+									</label>
+
+									<input type="radio" name="color" id="color8" />
+									<label for="color8">
+										<svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+											<rect width="40" height="40" rx="20" fill="#2D3136" />
+											<rect x="6" y="6" width="28" height="28" rx="14" fill="#ffcd59" />
+										</svg>
+									</label>
+
+									<input type="radio" name="color" id="color9" />
+									<label for="color9">
+										<svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+											<rect width="40" height="40" rx="20" fill="#2D3136" />
+											<rect x="6" y="6" width="28" height="28" rx="14" fill="#e1ff59" />
+										</svg>
+									</label>
+
+									<input type="radio" name="color" id="color10" />
+									<label for="color10">
+										<svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+											<rect width="40" height="40" rx="20" fill="#2D3136" />
+											<rect x="6" y="6" width="28" height="28" rx="14" fill="#59ff91" />
+										</svg>
+									</label>
+
+									<input type="radio" name="color" id="color11" />
+									<label for="color11">
+										<svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+											<rect width="40" height="40" rx="20" fill="#2D3136" />
+											<rect x="6" y="6" width="28" height="28" rx="14" fill="#59fff9" />
+										</svg>
+									</label>
+
+									<input type="radio" name="color" id="color12" />
+									<label for="color12">
+										<svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+											<rect width="40" height="40" rx="20" fill="#2D3136" />
+											<rect x="6" y="6" width="28" height="28" rx="14" fill="#ffffff" />
+										</svg>
+									</label>
+								</div>
+							</div>
+
+							<div class="theme-wrapper">
+								<label>Tema do evento</label>
+
+								<div class="card-wrapper">
+									<input type="radio" id="aniversario" name="tema" value="aniversario" hidden />
+									<label for="aniversario" class="card">
+										<img src="./assets/icons/image1.svg" alt="ícone de aniversário" />
+										<p>Aniversário</p>
+									</label>
+
+									<input type="radio" id="infantil" name="tema" value="infantil" hidden />
+									<label for="infantil" class="card">
+										<img src="./assets/icons/image2.svg" alt="ícone de festa infantil" />
+										<p>Infantil</p>
+									</label>
+
+									<input type="radio" id="formatura" name="tema" value="formatura" hidden />
+									<label for="formatura" class="card">
+										<img src="./assets/icons/image3.svg" alt="ícone de formatura" />
+										<p>Formatura</p>
+									</label>
+
+									<input type="radio" id="casamento" name="tema" value="casamento" hidden />
+									<label for="casamento" class="card">
+										<img src="./assets/icons/image4.svg" alt="ícone de casamento" />
+										<p>Casamento</p>
+									</label>
+
+									<input type="radio" id="cha_bebe" name="tema" value="cha_bebe" hidden />
+									<label for="cha_bebe" class="card">
+										<img src="./assets/icons/image5.svg" alt="ícone de chá de bebê" />
+										<p>Chá de bebê</p>
+									</label>
+
+									<input type="radio" id="cha_panela" name="tema" value="cha_panela" hidden />
+									<label for="cha_panela" class="card">
+										<img src="./assets/icons/image6.svg" alt="ícone de chá de panela" />
+										<p>Chá de panela</p>
+									</label>
+
+									<input type="radio" id="carnaval" name="tema" value="carnaval" hidden />
+									<label for="carnaval" class="card">
+										<img src="./assets/icons/image7.svg" alt="ícone de carnaval" />
+										<p>Carnaval</p>
+									</label>
+
+									<input type="radio" id="pascoa" name="tema" value="pascoa" hidden />
+									<label for="pascoa" class="card">
+										<img src="./assets/icons/image8.svg" alt="ícone de páscoa" />
+										<p>Páscoa</p>
+									</label>
+
+									<input type="radio" id="saojoao" name="tema" value="saojoao" hidden />
+									<label for="saojoao" class="card">
+										<img src="./assets/icons/image9.svg" alt="ícone de são joão" />
+										<p>São João</p>
+									</label>
+
+									<input type="radio" id="halloween" name="tema" value="halloween" hidden />
+									<label for="halloween" class="card">
+										<img src="./assets/icons/image10.svg" alt="ícone de halloween" />
+										<p>Halloween</p>
+									</label>
+
+									<input type="radio" id="natal" name="tema" value="natal" hidden />
+									<label for="natal" class="card">
+										<img src="./assets/icons/image11.svg" alt="ícone de natal" />
+										<p>Natal</p>
+									</label>
+
+									<input type="radio" id="outro" name="tema" value="outro" hidden />
+									<label for="outro" class="card">
+										<img src="./assets/icons/image12.svg" alt="ícone de outro" />
+										<p>Outro</p>
+									</label>
+								</div>
+
+								<div class="style-wrapper flex">
+									<div class="checkbox-wrapper">
+										<label>Estilo</label>
+										<div class="checkbox-button">
+											<label for="switch">
+												<img src="./assets/icons/switch-off.svg" alt="switch button" />
+												Escuro</label
+											>
+											<input type="checkbox" name="switch-color" id="switch" hidden />
+										</div>
+									</div>
+
+									<div class="cover-photo">
+										<label>Foto de capa</label>
+
+										<div class="file-wrapper">
+											<label for="file-upload" class="custom-file-button">
+												<img src="./assets/icons/input-file.svg" alt="" />
+												<span id="file-name">Upload de arquivo</span>
+											</label>
+											<input type="file" id="file-upload" />
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</form>
@@ -88,4 +295,11 @@
 			</main>
 		</div>
 	</body>
+
+	<script>
+		document.getElementById('file-upload').addEventListener('change', function () {
+			const fileName = this.files[0] ? this.files[0].name : 'Selecionar arquivo';
+			document.getElementById('file-name').textContent = fileName;
+		});
+	</script>
 </html>

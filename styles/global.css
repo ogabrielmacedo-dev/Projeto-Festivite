@@ -79,6 +79,7 @@ p {
 	gap: 0.5rem;
 	margin-bottom: 1.5rem;
 	grid-column: span 2;
+	margin-top: 3rem;
 }
 
 /* Utility */
@@ -88,6 +89,7 @@ p {
 }
 
 .flex-column {
+	display: flex;
 	flex-direction: column;
 }
 
