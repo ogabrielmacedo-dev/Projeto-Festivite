@@ -1,0 +1,53 @@
+.radio-inner {
+	display: flex;
+	gap: 0.5rem;
+	border: 1px solid var(--input-stroke);
+	border-radius: 0.5rem;
+	padding: 0.3rem;
+	max-height: 3rem;
+	margin-top: 1.25rem;
+}
+
+.radio-inner input {
+	display: none;
+}
+
+.radio-inner label {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	transition: 0.3s ease;
+	width: 100%;
+	color: var(--text-secondary);
+}
+
+.radio-inner label img {
+	width: 20px; /* Ajuste conforme necessário */
+	height: 20px;
+}
+
+.radio-inner input:checked + label {
+	background-color: var(--input-base);
+	color: var(--brand-light);
+	font-weight: bold;
+}
+
+#presencial + label img {
+	content: url('../../assets/icons/building-default.svg');
+}
+
+#online + label img {
+	content: url('../../assets/icons/video-default.svg');
+}
+
+/* Altera a imagem quando o input está marcado */
+#presencial:checked + label img {
+	content: url('../../assets/icons/building-checked.svg');
+}
+
+#online:checked + label img {
+	content: url('../../assets/icons/video-checked.svg');
+}

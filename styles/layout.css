@@ -1,0 +1,50 @@
+#app {
+	display: grid;
+	grid-template-columns: 31.25% 68.75%;
+	height: 100vh;
+	overflow: hidden;
+
+	background-color: #131516;
+	box-sizing: border-box;
+}
+
+aside {
+	background-image: url(../assets/brand-background.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	margin: 1.25rem;
+	padding: 2rem;
+	border-radius: 1rem;
+
+	& .aside-container {
+		flex-direction: column;
+
+		strong {
+			font: var(--text-logo);
+			color: var(--pink);
+		}
+
+		p {
+			font: var(--text-body);
+			color: var(--text-secondary);
+		}
+
+		img {
+			width: 100%;
+			max-width: 3rem;
+		}
+	}
+}
+
+main {
+	overflow: auto;
+	margin: 1.25rem;
+	margin-left: 0;
+
+	padding: 5rem 8rem;
+	border-radius: 1rem;
+
+	background-color: var(--shape-body);
+}

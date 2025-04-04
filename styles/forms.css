@@ -1,0 +1,42 @@
+@import url(./fields/index.css);
+
+form {
+	margin-top: 3rem;
+
+	& .about {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+
+		& .input-wrapper {
+			display: flex;
+			flex-direction: column;
+
+			&:nth-child(2) {
+				grid-column: span 2;
+			}
+		}
+
+		& .textarea-wrapper {
+			display: flex;
+			flex-direction: column;
+			grid-column: span 2;
+			height: auto;
+			overflow: scroll;
+
+			& textarea {
+				background-color: var(--input-base);
+				border: 2px solid var(--input-stroke);
+				outline: none;
+				border-radius: 1rem;
+				padding: 1rem;
+				margin-top: 1rem;
+				color: var(--text-primary);
+
+				&::placeholder {
+					color: var(--input-placeholder);
+				}
+			}
+		}
+	}
+}
