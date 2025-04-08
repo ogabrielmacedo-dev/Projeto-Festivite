@@ -73,6 +73,10 @@ p {
 	color: var(--text-secondary);
 }
 
+span {
+	color: var(--brand-light);
+}
+
 .section-title {
 	display: flex;
 	align-items: center;

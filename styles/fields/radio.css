@@ -21,7 +21,8 @@
 		transition: 0.3s ease;
 		width: 100%;
 		color: var(--text-secondary);
-		justify-content: center; /* joga os itens pra direita */
+		justify-content: center;
+		transition: all 0.3s ease;
 	}
 
 	& label > img {

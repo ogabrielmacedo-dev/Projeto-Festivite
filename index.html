@@ -263,16 +263,19 @@
 										<p>Outro</p>
 									</label>
 								</div>
-
 								<div class="style-wrapper flex">
 									<div class="checkbox-wrapper">
 										<label>Estilo</label>
 										<div class="checkbox-button">
-											<label for="switch">
-												<img src="./assets/icons/switch-off.svg" alt="switch button" />
-												Escuro</label
-											>
 											<input type="checkbox" name="switch-color" id="switch" hidden />
+
+											<label for="switch" class="switch-img-wrapper">
+												<span class="switch-icons">
+													<img src="./assets/icons/switch-off.svg" alt="switch button off" class="img-switch img-off" />
+													<img src="./assets/icons/switch-on.svg" alt="switch button on" class="img-switch img-on" />
+												</span>
+												Escuro
+											</label>
 										</div>
 									</div>
 
@@ -291,6 +294,56 @@
 							</div>
 						</div>
 					</form>
+
+					<form action="/" method="post" enctype="multipart/form-data">
+						<div class="contact">
+							<div class="section-title">
+								<img src="./assets/icons/contact.svg" alt="ícone de contato" />
+								<p>Dados para contato</p>
+							</div>
+
+							<div class="input-wrapper flex-column">
+								<label for="full-name">Nome</label>
+								<input type="text" name="full-name" id="full-name" placeholder="Nome completo" required />
+								<div class="flex error-message">
+									<img src="./assets/icons/circle-alert.svg" alt="ícone de atenção" />
+									<span class="danger">Campo obrigatório</span>
+								</div>
+							</div>
+
+							<div class="input-wrapper flex-column">
+								<label for="email">E-mail</label>
+								<input type="email" name="email" id="email" placeholder="abc@email.com" />
+							</div>
+
+							<div class="input-wrapper flex-column">
+								<label for="phone-number">Telefone</label>
+								<input type="tel" name="phone-number" id="phone-number" placeholder="(99) 99999-9999" />
+							</div>
+						</div>
+					</form>
+
+					<footer class="footer flex-column">
+						<div class="flex checkbox-wrapper">
+							<input type="checkbox" name="terms-condition" id="terms-condition" />
+							<label for="terms-condition">Li e concordo com os <span>Termos e Condições</span> e com a <span>Política de Privacidade</span></label>
+						</div>
+						<div class="flex checkbox-wrapper">
+							<input type="checkbox" name="email-promotion" id="email-promotion" />
+							<label for="email-promotion">Aceito receber atualizações e promoções por e-mail</label>
+						</div>
+						<div class="flex checkbox-wrapper">
+							<input type="checkbox" name="sms-promotion" id="sms-promotion" />
+							<label for="sms-promotion">Aceito receber atualizações e promoções por SMS</label>
+						</div>
+
+						<div class="action-button flex" id="action-button">
+							<button type="submit" class="flex">
+								<img src="./assets/icons/ticket.svg" alt="ícone de ingresso" />
+								<p>Gerar convite</p>
+							</button>
+						</div>
+					</footer>
 				</div>
 			</main>
 		</div>
