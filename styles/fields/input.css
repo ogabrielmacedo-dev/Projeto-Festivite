@@ -16,6 +16,7 @@ input[type='date']:focus-within {
 	padding-inline: 1rem;
 	height: 3rem;
 	border-radius: 0.5rem;
+	cursor: pointer;
 
 	transition: all 0.2s ease;
 
