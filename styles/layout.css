@@ -107,6 +107,7 @@ footer {
 			gap: 1rem;
 			padding: 0.25rem 1.25rem;
 			transition: all 0.3s ease;
+			cursor: pointer;
 
 			&:hover {
 				background-color: var(--brand-mid);
