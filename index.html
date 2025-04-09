@@ -338,7 +338,7 @@
 						</div>
 
 						<div class="action-button flex" id="action-button">
-							<button type="submit" class="flex">
+							<button type="submit" class="flex" onclick="mostrarAlerta()">
 								<img src="./assets/icons/ticket.svg" alt="ícone de ingresso" />
 								<p>Gerar convite</p>
 							</button>
@@ -354,5 +354,9 @@
 			const fileName = this.files[0] ? this.files[0].name : 'Selecionar arquivo';
 			document.getElementById('file-name').textContent = fileName;
 		});
+
+		function mostrarAlerta() {
+			alert('Você clicou no botão =)');
+		}
 	</script>
 </html>
